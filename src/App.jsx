@@ -32,10 +32,9 @@ function App() {
           return res.json();
         })
         .then((data) => {
-          setIsLoading(false);
           setCountry(data[0]);
+          setIsLoading(false);
           setInput('');
-          console.log(data);
         });
     }
   };
@@ -60,7 +59,7 @@ function App() {
       <section>
         <div className="countryDetails">
           {isLoading ? (
-            <p className="loading">Enter Country name above to see details</p>
+            ''
           ) : (
             <div className="country">
               <div>name:{country.name}</div>

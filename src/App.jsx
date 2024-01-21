@@ -51,9 +51,9 @@ function App() {
           onKeyPress={getCountry}
           placeholder="Enter a Country..."
         />
-        <button className="btn" onClick={getCountry}>
+        {/* <button className="btn" onClick={() => getCountry()}>
           <FiSearch />
-        </button>
+        </button> */}
       </header>
 
       <section>
